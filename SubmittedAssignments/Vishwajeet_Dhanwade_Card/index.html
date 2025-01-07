@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Cards Example</title>
+  <style>
+    .d-block {
+      margin: 4rem;
+      flex: 1;
+    }
+
+    .cards-row {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  </style>
+</head>
+
+<body class="container">
+  <h2>Cards Example</h2>
+
+  <div class="row">
+    <div class="col-3 d-block">
+      <card-component data='{
+        "title": "Card One",
+        "subTitle": "Dynamic Image Example",
+        "description": "This card shows how to dynamically position images.",
+        "image": "https://via.placeholder.com/150",
+        "imageStyles": {
+          "position": "relative",
+          "top": "px",
+          "left": "px",
+          "width": "px",
+          "height": "px"
+        },
+        "button": "Learn More",
+        "showImage": "true",
+        "showTitle": "true",
+        "showSubTitle": "true",
+        "showDescription": "true",
+        "showButton": "true"
+      }'></card-component>
+    </div>
+    <div class="col-3 d-block">
+      <card-component data='{
+        "title": "Card Two",
+        "subTitle": "Centered Image Example",
+        "description": "This card centers the image inside the card.",
+        "image": "https://via.placeholder.com/150",
+        "imageStyles": {
+          "position": "absolute",
+          "top": "210px",
+          "left": "px",
+          "width": "px",
+          "height": "px"
+        },
+        "button": "Learn More",
+        "showImage": "true",
+        "showTitle": "true",
+        "showSubTitle": "true",
+        "showDescription": "true",
+        "showButton": "true"
+      }'></card-component>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
